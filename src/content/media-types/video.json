@@ -1,0 +1,7 @@
+{
+  "label": "x.type.video",
+  "detailsPage": {
+    "layout": "video"
+  },
+  "icon": "mdi--video-outline"
+}
