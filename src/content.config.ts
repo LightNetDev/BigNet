@@ -6,7 +6,8 @@ import { faker } from '@faker-js/faker';
 
 const mediaItems = (() => {
     const media = new Map<string, any>()
-    for (let i = 0; i < 1000; i++) {
+    console.log(image)
+    for (let i = 0; i < 100; i++) {
         media.set(faker.lorem.slug(5),
             {
                 commonId: "bar",
@@ -14,8 +15,8 @@ const mediaItems = (() => {
                 title: faker.music.songName(),
                 language: "en",
                 content: [{ url: "https://wikipedia.org" }],
-                type: "video",
-                image
+                type: "book",
+                image: { src: faker.image.urlPicsumPhotos({ width: 500, height: 500 }), width: 500, height: 500, format: "jpg" }
             }
         )
     }

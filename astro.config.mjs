@@ -27,6 +27,7 @@ export default defineConfig({
    * external links and generating absolute URLs.
    */
   site: "https://bignet.pages.dev",
+  image: {domains: ["https://picsum.photos"]},
   integrations: [
     /**
      * Configuration for the LightNet integration.
