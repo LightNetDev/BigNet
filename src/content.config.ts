@@ -1,12 +1,10 @@
 import { type LoaderContext } from "astro/loaders"
 import { defineCollection } from "astro:content"
 import { LIGHTNET_COLLECTIONS, mediaSchema } from "lightnet/content"
-import image from "./assets/test-image.jpg"
 import { faker } from '@faker-js/faker';
 
 const mediaItems = (() => {
     const media = new Map<string, any>()
-    console.log(image)
     for (let i = 0; i < 100; i++) {
         media.set(faker.lorem.slug(5),
             {
