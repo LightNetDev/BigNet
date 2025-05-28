@@ -18,7 +18,6 @@ const languages = [
   {
     code: "de", // BCP47 language code for German
     label: "Deutsch", // Display name for German
-    isSiteLanguage: true, // Sets German as an site language
   },
 ]
 
@@ -27,8 +26,7 @@ export default defineConfig({
    * Base URL of your website. This is used for tasks like identifying
    * external links and generating absolute URLs.
    */
-  site: "https://sk8-ministries.pages.dev",
-
+  site: "https://bignet.pages.dev",
   integrations: [
     /**
      * Configuration for the LightNet integration.
@@ -79,20 +77,6 @@ export default defineConfig({
            */
           href: "/media",
           label: "ln.search.title", // LightNet internal translation key
-        },
-        {
-          /**
-           * Link to a custom About page.
-           */
-          href: "/about",
-          label: "x.navigation.about", // Custom translation key defined in translations
-        },
-        {
-          /**
-           * Link to an external website.
-           */
-          href: "https://www.om.org/eng/mediaworks/lightnet",
-          label: "LightNet", // Fixed string; not translatable
         },
       ],
 
