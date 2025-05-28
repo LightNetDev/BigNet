@@ -14,7 +14,7 @@ const mediaItems = (() => {
                 language: "en",
                 content: [{ url: "https://wikipedia.org" }],
                 type: "book",
-                image: { src: faker.image.urlPicsumPhotos({ width: 500, height: 500 }), width: 500, height: 500, format: "jpg" }
+                image: { src: faker.image.urlLoremFlickr({ width: 500, height: 500 }), width: 500, height: 500, format: "jpg" }
             }
         )
     }
