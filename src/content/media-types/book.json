@@ -1,7 +1,4 @@
 {
   "label": "x.type.book",
-  "detailsPage": {
-    "layout": "default"
-    },
   "icon": "mdi--book-open-blank-variant"
 }

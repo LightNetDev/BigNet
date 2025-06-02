@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "npm run generate && astro build",
+    "generate": "node generate-media.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },

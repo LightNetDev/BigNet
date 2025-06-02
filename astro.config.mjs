@@ -1,5 +1,4 @@
 // @ts-check
-import lightnetDecapAdmin from "@lightnet/decap-admin"
 import { defineConfig } from "astro/config"
 import lightnet from "lightnet"
 
@@ -27,7 +26,7 @@ export default defineConfig({
    * external links and generating absolute URLs.
    */
   site: "https://bignet.pages.dev",
-  image: {domains: ["https://picsum.photos"]},
+  image: { domains: ["https://picsum.photos"] },
   integrations: [
     /**
      * Configuration for the LightNet integration.
@@ -90,17 +89,6 @@ export default defineConfig({
          */
         filterByLocale: true,
       },
-    }),
-
-    /**
-     * Configuration for the LightNet Decap Admin integration.
-     * This provides a UI for managing content.
-     */
-    lightnetDecapAdmin({
-      /**
-       * Content languages. This should match the languages array of the lightnet config.
-       */
-      languages: languages,
     }),
   ],
 })
