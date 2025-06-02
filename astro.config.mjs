@@ -2,6 +2,7 @@
 import { defineConfig } from "astro/config"
 import lightnet from "lightnet"
 
+
 /**
  * Defines the available languages for the site, covering both
  * site and content languages.
