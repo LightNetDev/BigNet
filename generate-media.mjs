@@ -30,7 +30,7 @@ for (let i = 0; i < 10000; i++) {
         image: faker.helpers.arrayElement(images),
         description: faker.lorem.paragraphs(6)
     }
-    await fs.writeFile(`./src/content/media/${slug}.json`, JSON.stringify(media, null, 2), { encoding: "utf-8" })
+    await fs.writeFile(`./src/content/media/${slug}-${i}.json`, JSON.stringify(media, null, 2), { encoding: "utf-8" })
 }
 
 
