@@ -40,12 +40,6 @@ export default defineConfig({
       title: "x.site.title",
 
       /**
-       * Path to the logo displayed in the header, located in ./src/assets.
-       * Supported formats: svg, png, jpg, webp. Your logo will be optimized for performance.
-       */
-      logo: { src: "./src/assets/logo.png" },
-
-      /**
        * Language settings for UI and content.
        */
       languages: languages,
@@ -57,28 +51,6 @@ export default defineConfig({
       favicon: [
         { href: "favicon.ico", sizes: "32x32" }, // Default icon for browsers
         { href: "favicon.svg" }, // Scalable vector icon
-      ],
-
-      /**
-       * Main menu configuration. This defines the links displayed in the header
-       * menu (accessible via the hamburger icon).
-       */
-      mainMenu: [
-        {
-          /**
-           * Link to the home page.
-           * The current locale is automatically prefixed for relative paths.
-           */
-          href: "/",
-          label: "ln.home.title", // LightNet internal translation key
-        },
-        {
-          /**
-           * Link to the search page.
-           */
-          href: "/media",
-          label: "ln.search.title", // LightNet internal translation key
-        },
       ],
 
       /**

@@ -5,9 +5,11 @@
 export { getLocalePaths as getStaticPaths } from "lightnet/i18n";
 
 import { getCollection } from "astro:content";
-import { Page, Section } from "lightnet/components";
+import { HeroSection, Page, Section } from "lightnet/components";
+import heroImage from "../../assets/hero.jpg";
 
 const count = (await getCollection("media")).length;
+const formatter = new Intl.NumberFormat("en-US");
 ---
 
 {
@@ -17,18 +19,35 @@ const count = (await getCollection("media")).length;
    */
 }
 <Page>
+  <HeroSection
+    image={heroImage}
+    title="BigNet"
+    titleSize="xl"
+    subtitleSize="lg"
+    subtitle=`Just a Big LightNet Showcase`
+  />
   <Section>
     <div class="flex flex-col items-center">
-      <p>
-        This LightNet instance showcases <strong>{count}</strong> media items in
-        action.
+      <p class="text-center text-lg">
+        This Lightnet demo site features a showcase of <strong>{count}</strong> media
+        items. <br />
+        While the content is placeholder text, it demonstrates a fully populated
+        library in action.
       </p>
 
       <a
         href=`/${Astro.currentLocale}/media`
-        class="px-12 py-4 mt-12 bg-gray-900 text-gray-100 rounded-lg"
-        >Go to the search page</a
+        class="px-12 py-4 mt-16 bg-gray-900 text-gray-100 rounded-lg"
+        >Try the Media Search</a
       >
+
+      <p class="text-sm mt-16 text-gray-500">
+        Images used on this site are provided from <a
+          class="underline"
+          href="https://unsplash.com"
+          target="_blank">Unsplash</a
+        >.
+      </p>
     </div>
   </Section>
 </Page>
