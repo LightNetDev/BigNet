@@ -12,12 +12,6 @@ const count = (await getCollection("media")).length;
 const formatter = new Intl.NumberFormat("en-US");
 ---
 
-{
-  /* 
-  Render a lightnet page. This will automatically include the
-  page structure, header, menu system...
-   */
-}
 <Page>
   <HeroSection
     image={heroImage}
@@ -29,8 +23,9 @@ const formatter = new Intl.NumberFormat("en-US");
   <Section>
     <div class="flex flex-col items-center">
       <p class="text-center text-lg">
-        This Lightnet demo site features a showcase of <strong>{count}</strong> media
-        items. <br />
+        This Lightnet demo site features a showcase of <strong
+          >{formatter.format(count)}</strong
+        > media items. <br />
         While the content is placeholder text, it demonstrates a fully populated
         library in action.
       </p>
