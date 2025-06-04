@@ -1,6 +1,6 @@
 # BigNet
 
-This project demonstrates a LightNet that is running with 10,000 media items.
+This LightNet library showcases 10,000 media items in action.
 
 View it online on https://bignet.pages.dev
 
@@ -12,9 +12,8 @@ Create the media items on your local machine by running:
 npm run generate
 ```
 
-This will execute a script [generate-media.mjs](./generate-media.mjs).
-You can modify this script if you need another number of entries, e.g. for local development (do not commit this to git!).
+This will execute the [generate-media.mjs](./generate-media.mjs) script.
+You can modify this script if you need another number of entries - e.g. for local development (do not commit this to git).
 The script makes sure to delete old entries before it creates new ones.
 
-Running `npm run build` will first run `generate-media.mjs` and then create the static website inside `/dist`. This script
-is used on Cloudflare.
+Running `npm run build` will first run `generate-media.mjs` and then create the static website inside `/dist`.
