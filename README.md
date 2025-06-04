@@ -1,30 +1,20 @@
-# Sk8 Ministries Example
+# BigNet
 
-This example show cases LightNet´s capabilities with a fictional skateboard ministry.
-View it online at [sk8-ministries.pages.dev](https://sk8-ministries.pages.dev/).
+This project demonstrates a LightNet that is running with 10,000 media items.
 
-Use this example to explore how to build a LightNet site or as a starting point for your own site. To **create a local copy**, run the following from your terminal:
+View it online on https://bignet.pages.dev
 
-```sh
-npm create astro@latest -- --template LightNetDev/lightnet/examples/sk8-ministries
+The media item json files are not under git version control, to keep the file footprint low.
+
+Create the media items on your local machine by running:
+
+```bash
+npm run generate
 ```
 
-## 🚀 Commands
+This will execute a script [generate-media.mjs](./generate-media.mjs).
+You can modify this script if you need another number of entries, e.g. for local development (do not commit this to git!).
+The script makes sure to delete old entries before it creates new ones.
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 🖥️ Admin UI
-
-To run the Admin UI locally, execute `npm run dev` and then `npx decap-server` from a second terminal tab from the root of the project.
-After this, navigate your browser to [localhost:4321/admin](localhost:4321/admin) and start administrating your content.
-
-When "publishing" your changes they will be saved to your computer's disk only.
+Running `npm run build` will first run `generate-media.mjs` and then create the static website inside `/dist`. This script
+is used on Cloudflare.

@@ -1,15 +1,5 @@
 x.site.title: BigNet
 x.navigation.about-lightnet: About LightNet
-x.navigation.about: About
-x.ministry.slogan: Living faith, building community
-x.home.our-latest-books: Our latest Books
-x.home.bbq.title: Skate, BBQ & Faith
-x.home.bbq.text: >
-  Join us for our next community meeting! 
-  Enjoy a BBQ, skate with friends, and engage in meaningful conversations about Jesus. 
-  Don’t miss this opportunity to connect, skate, and grow in faith together. 
-  All skill levels welcome!
-x.home.bbq.sign-up-now: Sign Up Now
 x.category.biography: Biography
 x.category.christian-living: Christian Living
 x.category.comics: Comics
@@ -23,5 +13,3 @@ x.category.theology: Theology
 x.type.book: Book
 x.type.video: Video
 x.type.audio: Audio
-x.details.action.read: Read
-x.details.action.watch: Watch
