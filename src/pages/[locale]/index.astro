@@ -5,7 +5,7 @@
 export { getLocalePaths as getStaticPaths } from "lightnet/i18n";
 
 import { getCollection } from "astro:content";
-import { HeroSection, Page, Section } from "lightnet/components";
+import { HeroSection, Page, SearchSection, Section } from "lightnet/components";
 import heroImage from "../../assets/hero.jpg";
 
 const count = (await getCollection("media")).length;
@@ -29,20 +29,14 @@ const formatter = new Intl.NumberFormat("en-US");
         While the content is placeholder text, it demonstrates a fully populated
         library in action.
       </p>
-
-      <a
-        href=`/${Astro.currentLocale}/media`
-        class="px-12 py-4 mt-16 bg-gray-900 text-gray-100 rounded-lg"
-        >Try the Media Search</a
-      >
-
-      <p class="text-sm mt-16 text-gray-500">
+      <p class="text-sm mt-4 text-gray-500">
         Images used on this site are provided from <a
           class="underline"
           href="https://unsplash.com"
           target="_blank">Unsplash</a
-        >.
+        >
       </p>
     </div>
   </Section>
+  <SearchSection />
 </Page>
