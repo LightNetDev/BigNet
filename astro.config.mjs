@@ -52,13 +52,6 @@ export default defineConfig({
         { href: "favicon.ico", sizes: "32x32" }, // Default icon for browsers
         { href: "favicon.svg" }, // Scalable vector icon
       ],
-
-      /**
-       * Configuration for the search page.
-       */
-      searchPage: {
-        hideHeaderSearchIcon: true
-      },
     }),
   ],
 })
