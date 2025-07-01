@@ -57,10 +57,7 @@ export default defineConfig({
        * Configuration for the search page.
        */
       searchPage: {
-        /**
-         * Filters search results by the current locale when navigating to the search page.
-         */
-        filterByLocale: true,
+        hideHeaderSearchIcon: true
       },
     }),
   ],
