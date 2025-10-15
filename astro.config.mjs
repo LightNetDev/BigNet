@@ -1,7 +1,6 @@
 // @ts-check
-import { defineConfig } from "astro/config"
-import lightnet from "lightnet"
-
+import { defineConfig } from "astro/config";
+import lightnet from "lightnet";
 
 /**
  * Defines the available languages for the site, covering both
@@ -19,7 +18,7 @@ const languages = [
     code: "de", // BCP47 language code for German
     label: "Deutsch", // Display name for German
   },
-]
+];
 
 export default defineConfig({
   /**
@@ -38,6 +37,7 @@ export default defineConfig({
        * Title of the website. It appears in the browser tab and the header bar.
        */
       title: "x.site.title",
+      credits: true,
 
       /**
        * Language settings for UI and content.
@@ -54,4 +54,4 @@ export default defineConfig({
       ],
     }),
   ],
-})
+});
