@@ -2,7 +2,7 @@
 
 This LightNet library showcases 10,000 media items in action.
 
-View it online on https://bignet.pages.dev
+View it online on https://bignet.kuuluu.workers.dev
 
 The media item json files are not under git version control, to keep the file footprint low.
 
