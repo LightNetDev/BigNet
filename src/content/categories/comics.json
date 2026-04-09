@@ -1,3 +1,5 @@
 {
-  "label": "x.category.comics"
+  "label": {
+    "en": "Comics"
+  }
 }

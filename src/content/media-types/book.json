@@ -1,4 +1,6 @@
 {
-  "label": "x.type.book",
-  "icon": "mdi--book-open-blank-variant"
+  "label": {
+    "en": "Book"
+  },
+  "icon": "lucide--book-open-text"
 }

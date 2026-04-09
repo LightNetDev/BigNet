@@ -1,3 +1,5 @@
 {
-  "label": "x.category.studies"
+  "label": {
+    "en": "Studies"
+  }
 }

@@ -1,3 +1,5 @@
 {
-  "label": "x.category.family"
+  "label": {
+    "en": "Family"
+  }
 }

@@ -1,3 +1,5 @@
 {
-  "label": "x.category.teens"
+  "label": {
+    "en": "Teens"
+  }
 }

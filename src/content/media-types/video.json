@@ -1,4 +1,6 @@
 {
-  "label": "x.type.video",
-  "icon": "mdi--video-outline"
+  "label": {
+    "en": "Video"
+  },
+  "icon": "lucide--video"
 }

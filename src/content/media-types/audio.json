@@ -1,4 +1,6 @@
 {
-  "label": "x.type.audio",
-  "icon": "mdi--music-box-outline"
+  "label": {
+    "en": "Audio"
+  },
+  "icon": "lucide--music"
 }

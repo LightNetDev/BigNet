@@ -2,31 +2,12 @@
 import { defineConfig } from "astro/config";
 import lightnet from "lightnet";
 
-/**
- * Defines the available languages for the site, covering both
- * site and content languages.
- *
- * @type {import('lightnet').Language[]}
- */
-const languages = [
-  {
-    code: "en", // BCP47 language code for English
-    label: "English", // Name displayed in the language selector
-    isDefaultSiteLanguage: true, // Sets English as the default site language
-  },
-  {
-    code: "de", // BCP47 language code for German
-    label: "Deutsch", // Display name for German
-  },
-];
-
 export default defineConfig({
   /**
    * Base URL of your website. This is used for tasks like identifying
    * external links and generating absolute URLs.
    */
   site: "https://bignet.pages.dev",
-  image: { domains: ["https://picsum.photos"] },
   integrations: [
     /**
      * Configuration for the LightNet integration.
@@ -36,14 +17,23 @@ export default defineConfig({
       /**
        * Title of the website. It appears in the browser tab and the header bar.
        */
-      title: "x.site.title",
+      title: { en: "BigNet" },
       credits: true,
 
       /**
        * Language settings for UI and content.
        */
-      languages: languages,
-
+      languages: [
+        {
+          code: "en", // BCP47 language code for English
+          label: { en: "English" }, // Name displayed in the language selector
+          isDefaultSiteLanguage: true, // Sets English as the default site language
+        },
+        {
+          code: "de",
+          label: { en: "Deutsch" },
+        },
+      ],
       /**
        * Favicon settings for browser tabs and bookmarks.
        * Specify multiple formats for optimal compatibility across devices.
